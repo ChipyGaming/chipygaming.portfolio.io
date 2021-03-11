@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
-/*
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3192,7 +3186,7 @@ input, select, textarea {
 					padding-right: 1.5em;
 				}
 
-				#header nav a[href="#menu"] {
+			/*	#header nav a[href="#menu"] {
 					padding-right: 3.325em !important;
 				}
 
@@ -3232,7 +3226,7 @@ input, select, textarea {
 						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
 							right: 2em;
 						}
-
+*/
 		#header.reveal {
 			-moz-animation: reveal-header 0.35s ease;
 			-webkit-animation: reveal-header 0.35s ease;
@@ -3286,7 +3280,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 1680px) {
+		/*@media screen and (max-width: 1680px) {
 
 			#header nav a[href="#menu"] {
 				padding-right: 3.75em !important;
@@ -3371,7 +3365,7 @@ input, select, textarea {
 					right: 0;
 				}
 
-		}
+		}*/
 
 /* Banner */
 
@@ -3812,7 +3806,7 @@ input, select, textarea {
 		z-index: 10002;
 	}
 
-		#menu .inner {
+	/*	#menu .inner {
 			-moz-transition: -moz-transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
 			-webkit-transition: -webkit-transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
 			-ms-transition: -ms-transform 0.35s ease-out, opacity 0.35s ease, visibility 0.35s;
@@ -3831,7 +3825,7 @@ input, select, textarea {
 			width: 18em;
 		}
 
-			#menu .inner > :first-child {
+		/*	#menu .inner > :first-child {
 				margin-top: 2em;
 			}
 
@@ -3872,7 +3866,7 @@ input, select, textarea {
 					#menu ul.links > li:first-child > a:not(.button) {
 						border-top: 0 !important;
 					}
-
+*/
 		#menu .close {
 			-moz-transition: color 0.2s ease-in-out;
 			-webkit-transition: color 0.2s ease-in-out;
@@ -3950,3 +3944,15 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+		div.Pizza {
+			height: 10em;
+			display: flex;
+			align-items: center;
+			justify-content: center }
+		  div.Pizza p {
+			margin: 0 }
+			IMG.Pizza{
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+			}

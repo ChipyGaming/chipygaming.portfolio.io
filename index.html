@@ -22,8 +22,15 @@
 
 				<!-- Menu -->
 					<nav id="menu">
-						<ul class="links">
-							
+						<div id="TickerTracker">
+							Ticker this is
+						</div>
+						<div id = "Unity">
+							This is Unity
+						</div>
+						<div id = "Pizza">
+							<iframe src="https://drive.google.com/file/d/1cPkpTYqziK1y0Yv-lDt8fsI6qb8zoFKc/preview" width="1280" height="720"></iframe>
+						</div>
 					</nav>
 				
 				
@@ -56,7 +63,7 @@
 									<header class="major">
 										<h3>Ticker Tracker</h3>
 										<p>Chrome extension that allows users to view yahoo financials on stock tickers they find while browsing. </p>
-										<a href= "#menu" class="icon fa-eye"></a>
+										<a href= "#menu" class="icon fa-eye" onclick="showTracker()"><span class="label"></span></a>
 										<a href="https://github.com/ChipyGaming/chipygaming.stockSearch" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-github"><span class="label"></span></a>
 									</header>
 								</article>
@@ -67,7 +74,7 @@
 									<header class="major">
 										<h3>Unity Educational Game</h3>
 										<p>feugiat amet tempus</p>
-										<a href="https://github.com/ChipyGaming/chipygaming.stockSearch" target="_blank" rel="noopener noreferrer" class="icon fa-eye"><span class="label"></span></a>
+										<a href="#menu" class="icon fa-eye" onclick="showUnity()"><span class="label"></span></a>
 										<a href="https://github.com/ChipyGaming/chipygaming.stockSearch" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-github"><span class="label"></span></a>
 									</header>
 								</article>
@@ -80,7 +87,7 @@
 										<p>Android mobile app developed using Android Studios (Java/Koltin), XML for the front-end 
 											and Firebase for the database
 										</p>
-										<a href="https://github.com/ChipyGaming/chipygaming.stockSearch" target="_blank" rel="noopener noreferrer" class="icon fa-eye"><span class="label"></span></a>
+										<a href="#menu" class="icon fa-eye" onclick="showPizza()"><span class="label"></span></a>
 										<a href="https://github.com/ChipyGaming/chipygaming.stockSearch" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-github"><span class="label"></span></a>
 									</header>
 								</article>
@@ -178,9 +185,6 @@
 								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
 						</div>
 					</footer>
 
@@ -194,6 +198,38 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function showTracker() {
+				  document.getElementById("Unity").style.display = "none";
+				  document.getElementById("Pizza").style.display = "none";
+				  document.getElementById("TickerTracker").style.display = "";
+				  document.getElementById("Gravity").style.display = "none";
+				}
+			</script>
+			<script>
+				function showUnity() {
+				  document.getElementById("TickerTracker").style.display = "none";
+				  document.getElementById("Pizza").style.display = "none";
+				  document.getElementById("Unity").style.display = "";
+				  document.getElementById("Gravity").style.display = "none";
+				}
+			</script>
+			<script>
+				function showPizza() {
+				  document.getElementById("Unity").style.display = "none";
+				  document.getElementById("TickerTracker").style.display = "none";
+				  document.getElementById("Pizza").style.display = "";
+				  document.getElementById("Gravity").style.display = "none";
+				}
+			</script>
+			<script>
+				function showGravity() {
+				  document.getElementById("Unity").style.display = "none";
+				  document.getElementById("TickerTracker").style.display = "none";
+				  document.getElementById("Gravity").style.display = "";
+				  document.getElementById("Pizza").style.display = "none";
+				}
+			</script>										
 
 	</body>
 </html>
