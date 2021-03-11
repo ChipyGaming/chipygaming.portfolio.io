@@ -327,8 +327,4 @@
 
 			});
 
-			function myFunctionTest() {
-				document.getElementById("myDIV").style.display = "none";
-			  }
-
 })(jQuery);
