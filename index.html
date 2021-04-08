@@ -22,11 +22,32 @@
 
 				<!-- Menu -->
 					<nav id="menu">
-						<div id="TickerTracker">
-							Coming Soon
+						<div id="SmallProjects">
+							<h2 style="text-align:center">Slideshow Gallery</h2>
+							<div>
+								<div class="row">
+									<div class="column">
+										<iframe frameborder="0" src="https://chipygaming.github.io" width="500" height="850"></iframe>
+										<br>
+										<center>Resume</center>									</div>
+									<div class="column">
+										<iframe frameborder="0" src="https://chipygaming.github.io" width="500" height="850"></iframe>
+										<br>
+										<center>Resume</center>									</div>
+									<div class="column">
+										<iframe frameborder="0" src="https://chipygaming.github.io" width="500" height="850"></iframe>
+										<br>
+										<center>Resume</center>									</div>
+									<div class="column">
+										<iframe frameborder="0" src="https://chipygaming.github.io" width="500" height="850"></iframe>
+										<br>
+										<center>Resume</center>									</div>
+								</div>
+							</div>
 						</div>
 						<div id = "Unity">
-							<iframe frameborder="0" src="https://itch.io/embed-upload/3479965?color=333333" allowfullscreen="" width="1920" height="1080"><a href="https://chipy232323.itch.io/psychology-game">Play Psychology Game on itch.io</a></iframe>						</div>
+							<iframe frameborder="0" src="https://itch.io/embed-upload/3479965?color=333333" allowfullscreen="" width="1920" height="1080"><a href="https://chipy232323.itch.io/psychology-game">Play Psychology Game on itch.io</a></iframe>
+						</div>
 						<div id = "Pizza">
 							<iframe src="https://drive.google.com/file/d/1cPkpTYqziK1y0Yv-lDt8fsI6qb8zoFKc/preview" width="1280" height="720"></iframe>
 						</div>
@@ -64,7 +85,7 @@
 										<h3>Ticker Tracker</h3>
 										<p>Chrome extension that allows users to view yahoo financials on stock tickers they find while browsing. </p>
 										<p>Made using HTML and Javascript</p>
-										<a href= "#menu" class="icon fa-eye" onclick="showTracker()"><span class="label"></span></a>
+										<a target="_blank" rel="noopener noreferrer" class="icon fa-eye-slash"><span class="label"></span></a>
 										<a href="https://github.com/ChipyGaming/chipygaming.stockSearch" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-github"><span class="label"></span></a>
 									</header>
 								</article>
@@ -102,10 +123,11 @@
 										<img src="images/pic02.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3>Gravity</h3>
-										<p>WIP 2D side scrolling platformer where the player controls gravity</p>
-										<p>Prototyping being made in Game Maker using GML & pixel art</p>
-										<a target="_blank" rel="noopener noreferrer" class="icon fa-eye-slash"><span class="label"></span></a>
+										<h3>Other Smaller Projects</h3>
+										<p>You can view a gallery of my other smaller projects such as websites!
+										</p>
+										<p></p>
+										<a href="#menu" class="icon fa-eye" onclick="showSmaller()"><span class="label"></span></a>
 										<a target="_blank" rel="noopener noreferrer" class="icon brands alt fa-github"><span class="label"></span></a>
 									</header>
 								</article>
@@ -203,16 +225,16 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				function showTracker() {
+				function showSmaller() {
 				  document.getElementById("Unity").style.display = "none";
 				  document.getElementById("Pizza").style.display = "none";
-				  document.getElementById("TickerTracker").style.display = "";
+				  document.getElementById("SmallProjects").style.display = "";
 				  document.getElementById("Gravity").style.display = "none";
 				}
 			</script>
 			<script>
 				function showUnity() {
-				  document.getElementById("TickerTracker").style.display = "none";
+				  document.getElementById("SmallProjects").style.display = "none";
 				  document.getElementById("Pizza").style.display = "none";
 				  document.getElementById("Unity").style.display = "";
 				  document.getElementById("Gravity").style.display = "none";
@@ -221,7 +243,7 @@
 			<script>
 				function showPizza() {
 				  document.getElementById("Unity").style.display = "none";
-				  document.getElementById("TickerTracker").style.display = "none";
+				  document.getElementById("SmallProjects").style.display = "none";
 				  document.getElementById("Pizza").style.display = "";
 				  document.getElementById("Gravity").style.display = "none";
 				}
@@ -229,7 +251,7 @@
 			<script>
 				function showGravity() {
 				  document.getElementById("Unity").style.display = "none";
-				  document.getElementById("TickerTracker").style.display = "none";
+				  document.getElementById("SmallProjects").style.display = "none";
 				  document.getElementById("Gravity").style.display = "";
 				  document.getElementById("Pizza").style.display = "none";
 				}
