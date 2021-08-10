@@ -51,11 +51,16 @@
 								</div>
 							</div>
 						</div>
+						<div>
+						<div id = "showFreelance">
+							<iframe frameborder = "1" width="1920" height="1080" src="https://www.youtube.com/embed/icZ-pEAA8-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 						<div id = "Unity">
 							<iframe frameborder="0" src="https://itch.io/embed-upload/3479965?color=333333" allowfullscreen="" width="1920" height="1080"><a href="https://chipy232323.itch.io/psychology-game">Play Psychology Game on itch.io</a></iframe>
 						</div>
 						<div id = "Pizza">
 							<iframe src="https://drive.google.com/file/d/1cPkpTYqziK1y0Yv-lDt8fsI6qb8zoFKc/preview" width="1280" height="720"></iframe>
+						</div>
 						</div>
 					</nav>
 				
@@ -88,11 +93,11 @@
 										<img src="images/pic02.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3>Ticker Tracker</h3>
-										<p>Chrome extension that allows users to view yahoo financials on stock tickers they find while browsing. </p>
-										<p>Made using HTML and Javascript</p>
-										<a target="_blank" rel="noopener noreferrer" class="icon fa-eye-slash"><span class="label"></span></a>
-										<a href="https://github.com/ChipyGaming/chipygaming.stockSearch" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-github"><span class="label"></span></a>
+										<h3>UpWork Client #1</h3>
+										<p>CobbCo requested that I revamp their website to be more user friendly. On Shopify, I remade their entire theme, and added in my own HTML/CSS/JavaScript to make the website flow better </p>
+										<p>Made using HTML/CSS/Javascript and Liquid</p>
+										<a href="#menu" class="icon fa-eye" onclick="showFreelance()"><span class="label"></span></a>
+										<a href="https://cobbco.store/" target="_blank" rel="noopener noreferrer" class="fas fa-play"><span class="label"></span></a>
 									</header>
 								</article>
 								<article>
@@ -236,30 +241,40 @@
 				  document.getElementById("Pizza").style.display = "none";
 				  document.getElementById("SmallProjects").style.display = "";
 				  document.getElementById("Gravity").style.display = "none";
+				  document.getElementById("showFreelance").style.display = "none";
 				}
-			</script>
-			<script>
+
 				function showUnity() {
+				  document.getElementById("showFreelance").style.display = "none";
 				  document.getElementById("SmallProjects").style.display = "none";
 				  document.getElementById("Pizza").style.display = "none";
 				  document.getElementById("Unity").style.display = "";
 				  document.getElementById("Gravity").style.display = "none";
+
 				}
-			</script>
-			<script>
+
 				function showPizza() {
+					document.getElementById("showFreelance").style.display = "none";
 				  document.getElementById("Unity").style.display = "none";
 				  document.getElementById("SmallProjects").style.display = "none";
 				  document.getElementById("Pizza").style.display = "";
 				  document.getElementById("Gravity").style.display = "none";
 				}
-			</script>
-			<script>
+
 				function showGravity() {
 				  document.getElementById("Unity").style.display = "none";
 				  document.getElementById("SmallProjects").style.display = "none";
 				  document.getElementById("Gravity").style.display = "";
 				  document.getElementById("Pizza").style.display = "none";
+				  document.getElementById("showFreelance").style.display = "none";
+				}
+
+				function showFreelance() {
+					document.getElementById("Pizza").style.display = "none";
+				  document.getElementById("showFreelance").style.display = "";
+				  document.getElementById("Unity").style.display = "none";
+				  document.getElementById("SmallProjects").style.display = "none";
+				  document.getElementById("Gravity").style.display = "none";
 				}
 			</script>														
 
